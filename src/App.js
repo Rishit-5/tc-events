@@ -1,23 +1,21 @@
 import logo from './logo.svg';
-import './index.css';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <div className="flex justify-center ">
+        <img src={logo} className=" h-15 w-12" alt="logo" />
+        <p className="text-black">
           Touch of Class Events
         </p>
         <a
-          className="App-link"
+
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-
+        UrMom.com
         </a>
-      </header>
     </div>
   );
 }

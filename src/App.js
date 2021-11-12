@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
 
+<<<<<<< HEAD
 function App() {
   return (
     <div className="flex justify-center ">
@@ -18,6 +17,16 @@ function App() {
         </a>
     </div>
   );
+=======
+import Header from './components/Header'
+
+function App() {
+    return (
+        <div className="App">
+            <Header />
+        </div>
+    );
+>>>>>>> 605d00ebf64fca10226c4fcf2af0a1b481f00c97
 }
 
 export default App;

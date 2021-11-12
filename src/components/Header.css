@@ -7,7 +7,7 @@
     height: 100vh;
 }
 #header .closemenu {
-    color: #000;
+    color: #ffffff;
     position: absolute;
     right: 0;
     z-index: 9999;
@@ -15,13 +15,14 @@
     border-radius: 50%;
     font-weight: bold;
     font-size: 22px;
-    top: 55px;
+    top: 50%;
     cursor: pointer;
 }
 #header .pro-sidebar {
     width: 100%;
     min-width: 100%;
 }
+
 #header .pro-sidebar.collapsed {
     width: 80px;
     min-width: 80px;
@@ -33,6 +34,7 @@
 #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
 }
+
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
     font-size: 20px;
     padding: 0 20px;

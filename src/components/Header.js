@@ -27,7 +27,7 @@ import "./Header.css";
 const Header = () => {
 
     //create initial menuCollapse state using useState hook
-    const [menuCollapse, setMenuCollapse] = useState(false)
+    const [menuCollapse, setMenuCollapse] = useState(true)
 
     //create a custom function that will change menucollapse state from false to true and true to false
     const menuIconClick = () => {
@@ -37,27 +37,16 @@ const Header = () => {
 
     return (
         <>
-            <div id="header" onMouseOver={function() {
-                if(menuCollapse === true) {
-                    menuIconClick()
-                }
-            }}>
+            <div id="header" onMouseEnter={menuIconClick} onMouseLeave={menuIconClick}>
                 {/* collapsed props to change menu size using menucollapse state */}
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>
-                        <div className="logotext">
+                        <div className="text-white">
                             {/* small and big change using menucollapse state */}
                             <img alt = "logo" src = {Logo}></img>
                         </div>
                         <br/>
-                        <div className="closemenu" onClick={menuIconClick}>
-                            {/* changing menu collapse icon on click */}
-                            {menuCollapse ? (
-                                <FiArrowRightCircle/>
-                            ) : (
-                                <FiArrowLeftCircle/>
-                            )}
-                        </div>
+
                     </SidebarHeader>
                     <SidebarContent>
                         <Menu iconShape="square">

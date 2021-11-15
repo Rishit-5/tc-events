@@ -37,7 +37,11 @@ const Header = () => {
 
     return (
         <>
-            <div id="header">
+            <div id="header" onMouseOver={function() {
+                if(menuCollapse === true) {
+                    menuIconClick()
+                }
+            }}>
                 {/* collapsed props to change menu size using menucollapse state */}
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>

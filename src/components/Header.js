@@ -26,6 +26,9 @@ import "./Header.css";
 
 const Header = () => {
 
+    const WEB_URL = "http://localhost:3000/"
+
+
     //create initial menuCollapse state using useState hook
     const [menuCollapse, setMenuCollapse] = useState(true)
 
@@ -53,10 +56,18 @@ const Header = () => {
                             <MenuItem active={true} icon={<FiHome />}>
                                 Home
                             </MenuItem>
+                            <div onClick={()=>{
+                                window.location = WEB_URL+"book"
+                            }}>
                             <MenuItem icon={<FaList />}>Category</MenuItem>
+                            </div>
+                            <div>
                             <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-                            <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-                            <MenuItem icon={<BiCog />}>Settings</MenuItem>
+            </div>
+                            <div>
+                            <MenuItem icon={<RiPencilLine />}>Author</MenuItem></div>
+                            <div>
+                            <MenuItem icon={<BiCog />}>Settings</MenuItem></div>
                         </Menu>
                     </SidebarContent>
                     <SidebarFooter>

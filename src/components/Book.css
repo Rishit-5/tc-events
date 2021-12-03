@@ -1,4 +1,9 @@
 .grid{
-    width: 400px;
-    height: 400px
+    display: flex;
+    flex-wrap: wrap;
+    /* also change the `vh` to `%` */
+
+}
+.button{
+    background-color: #4a4dff;
 }

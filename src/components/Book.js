@@ -10,7 +10,7 @@ import "./Book.css"
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         paper: {
-            padding: theme.spacing(2),
+            padding: theme.spacing(0),
             textAlign: 'center',
             color: theme.palette.text.secondary,
         },
@@ -30,7 +30,7 @@ const Book = () => {
         for (let i = 1; i < 25; i++) {
             let y = [];
             for (let j = 1; j < 25; j++) {
-                y.push(i*j)
+                y.push(j)
             }
             x.push(y)
         }
@@ -38,9 +38,9 @@ const Book = () => {
     }
 
     const lolList = ()=> {
-        return testArr().map(co => (<Grid container spacing={0} class = "grid">
+        return testArr().map(co => (<Grid container spacing={0} class = "rf">
             {
-                co.map(ro => (<Grid item xs={0} ><Button onClick={test}>{ro}</Button> </Grid>))
+                co.map(ro => (<Grid item xs={0} ><Button onClick={test} >3</Button> </Grid>))
 
             }</Grid>))
     }
@@ -49,7 +49,7 @@ const Book = () => {
     }
 
     return (
-        <div>
+        <div  class = "grid">
             <h2>Home hjkdhjndhjnh,jnd</h2>
             <br></br>
             <Grid container spacing={0}>

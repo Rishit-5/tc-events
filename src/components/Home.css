@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: inline-flex;
+
+}
+table, td, th {
+    border: 1px solid black;
+}
+td{
+    height: 20px;
+}
+.tbl{
+    width: 100%;
+}
+.btn{
+    border: 1px solid black;
+
+}
+.clicked {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+
+}
+.notclicked{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+

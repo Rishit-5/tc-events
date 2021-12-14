@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme: Theme) =>
             color: theme.palette.text.secondary,
         },
         root: {
-            flexGrow: 1,
         },
     }),
 );
@@ -27,9 +26,9 @@ const Book = () => {
     // const testArr = [0,1,2,3,4,5]
     const testArr = () => {
         let x = [];
-        for (let i = 1; i < 25; i++) {
+        for (let i = 1; i < 10; i++) {
             let y = [];
-            for (let j = 1; j < 25; j++) {
+            for (let j = 1; j < 10; j++) {
                 y.push(j)
             }
             x.push(y)
@@ -38,9 +37,9 @@ const Book = () => {
     }
 
     const lolList = ()=> {
-        return testArr().map(co => (<Grid container spacing={0} class = "rf">
+        return testArr().map(co => (<Grid class = "grid" container spacing={0}>
             {
-                co.map(ro => (<Grid item xs={0} ><Button onClick={test} >3</Button> </Grid>))
+                co.map(ro => (<Grid item xs={0}  ><Button onClick={test} >3</Button> </Grid>))
 
             }</Grid>))
     }
@@ -49,10 +48,10 @@ const Book = () => {
     }
 
     return (
-        <div  class = "grid">
+        <div  >
             <h2>Home hjkdhjndhjnh,jnd</h2>
-            <br></br>
-            <Grid container spacing={0}>
+            <br/>
+            <Grid  container spacing={0}>
 
                 {lolList()}
             </Grid>
